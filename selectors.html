@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Selectors Example</title>
+    <style>
+        /* Type Selector */
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+
+        /* ID Selector */
+        #header {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Class Selector */
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Attribute Selector */
+        a[href] {
+            color: red;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: orange;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Child Selector */
+        div > p {
+            font-weight: bold;
+            color: purple;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            background-color: lightblue;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Selectors Example</h1>
+    </div>
+
+    <p>This is just a paragraph.</p>
+
+    <p>This is just a paragraph.</p>
+
+    <div class="box">
+        <p>This is just a paragraph.</p>
+        <p>This is just a paragraph.</p>
+    </div>
+
+    <div class="box">
+        <p>This is just a paragraph.</p>
+    </div>
+
+    <p>This is just a paragraph: <a href="https://example.com">Visit Example</a></p>
+
+</body>
+</html>

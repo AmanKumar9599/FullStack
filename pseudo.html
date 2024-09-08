@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements Example</title>
+    <style>
+        p::before {
+            content: ">> ";
+            color: red;
+        }
+
+        p::after {
+            content: " <<";
+            color: blue;
+        }
+
+        h1::first-letter {
+            font-size: 40px;
+            color: green;
+        }
+
+        h1::first-line {
+            font-weight: bold;
+        }
+        p::selection{
+            background-color: tomato;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph with pseudo-elements before and after.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, qui? Rerum illo mollitia quas, facere possimus ad nulla eveniet modi ea temporibus, provident natus obcaecati debitis explicabo at dolor et.</p>
+</body>
+</html>
