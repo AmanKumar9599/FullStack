@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_Model</title>
+    <style>
+        .main{
+            border: 2px solid red;
+            height: 150vh;
+            width: 90vw;
+        }
+        .container{
+            border: 2px solid green;
+            height: 70%;
+            width: 70%;
+            margin: 30px;
+            position: relative;
+        }
+        .item{
+            border: 2px solid orange;
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+        }
+        #item1{
+            position: fixed;
+            top: 50%;
+            left: 80%;
+        }
+        #item2{
+            position:absolute;
+            left: 120px;
+            top: 106px;
+            
+        }
+        #item3{
+            position: sticky;
+            top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Position Property -->
+        <!-- 1. static ->By default -->
+        <!-- 2. Absolute ->Element positioned itself according to its nearest positioned neighbour (if not exist move wrt body)-->
+        <!-- 3. Relative ->Element positioned itself according to its original position -->
+        <!-- 4. Fixed -> Element fixed its position on body according to body-->
+        <!-- 5. sticky -> Element behave as a fixed element only inside its parent element -->
+
+    <div class="main">
+        <div class="container">
+            <div class="item" id="item1">item1</div>
+            <div class="item" id="item2">item2</div>
+            <div class="item" id="item3">item3</div>
+        </div>
+    </div>
+</body>
+</html>
